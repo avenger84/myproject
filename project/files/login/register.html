@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ثبت‌نام</title>
+    <link rel="stylesheet" href="/files/css/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>ثبت‌نام در سیستم</h2>
+        <form action="/files/php/reg.php" method="post">
+            <div class="input-group">
+                <label for="username">نام کاربری</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">رمز عبور</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">تأیید رمز عبور</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="register-btn">ثبت‌نام</button>
+            <a href="login.html"><button type="button" class="login-btn">بازگشت به ورود</button></a>
+        </form>
+    </div>
+</body>
+</html>
